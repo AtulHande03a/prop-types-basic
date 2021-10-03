@@ -13,7 +13,7 @@ export const useFetch = (url) => {
 
   useEffect(() => {
     getProducts();
-  }, []);
+  }, [url]);
   console.log(products);
 
   return { loading, products };
